@@ -1,0 +1,8 @@
+{
+	"environment_replace": {},
+	"script_replace": [],
+	"permissions": {
+		"data": 777,
+		"data/mariadb_data": 777
+	}
+}
