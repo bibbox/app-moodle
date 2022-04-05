@@ -9,6 +9,10 @@ The default admin user name is `user` and password is `bitnami`. During the inst
 
 ![Screenshot01](assets/install-screen-01.png)
 
+### Use Moodle
+
+![Screenshot02](assets/install-screen-02.png)
+
 
 ## After the installation
 Have a nice ride with the Admins youngtimer.
