@@ -3,7 +3,7 @@
 	"short_name": "Moodle",
 	"version": "3.11.6bibboxrel001",
 	"description": "Moodle is the world's most popular learning management system.",
-	"short_description": "Learning management system",
+	"short_description": "Learning Management System",
 	"catalogue_url": "",
 	"application_url": "https://moodle.org/",
 	"tags": ["Learning", "Teaching","LMS"],
