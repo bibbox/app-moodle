@@ -3,7 +3,7 @@
         "id":"USER",
         "display_name":"Moodle Username",
         "type":"text",
-        "default_value":"moodle",
+        "default_value":"user",
         "description":"Username for admin moodle user",
         "min_length": "1",
         "max_length": "128"
