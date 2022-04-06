@@ -1,0 +1,11 @@
+{
+	"name": "Moodlev3.11.6bibboxrel001",
+	"short_name": "Moodle",
+	"version": "3.11.6bibboxrel001",
+	"description": "Moodle is the world's most popular learning management system.",
+	"short_description": "Learning Management System",
+	"catalogue_url": "",
+	"application_url": "https://moodle.org/",
+	"tags": ["Learning", "Teaching","LMS"],
+	"application_documentation_url": "https://github.com/bitnami/bitnami-docker-moodle"
+}
