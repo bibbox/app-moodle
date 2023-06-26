@@ -1,0 +1,40 @@
+[
+     {
+        "id":"USER",
+        "display_name":"Moodle Username",
+        "type":"text",
+        "default_value":"user",
+        "description":"Username for admin moodle user",
+        "min_length": "1",
+        "max_length": "128"
+     },
+     {
+        "id":"PASSWORD",
+        "display_name":"Moodle Password",
+        "type":"password",
+        "default_value":"bitnami",
+        "description":"Password for the admin moodle user",
+        "min_length": "1",
+        "max_length": "128"
+     },
+     {
+        "id":"DB_USER_PASSWORD",
+        "display_name":"DATABASE USER Password",
+        "type":"password",
+        "default_value":"bibbox",
+        "description":"User Password for DB User bn_moodle",
+        "min_length": "1",
+        "max_length": "128"
+     },
+     {
+        "id":"DB_ADMIN_PASSWORD",
+        "display_name":"DATABASE ADMIN Password",
+        "type":"password",
+        "default_value":"bibbox",
+        "description":"Admin Password, please change for production",
+        "min_length": "1",
+        "max_length": "128"
+     }
+]
+
+
