@@ -1,43 +1,51 @@
-# Moodle BIBBOX application
+# moodle BIBBOX application
 
-This container can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/) or standalone. 
+This container can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/ "BIBBOX App Store") or standalone. 
 
-* After the docker installation follow these [instructions](INSTALL-APP.md)
+- after the docker installation follow these [instructions](INSTALL-APP.md)
 
-## Standalone Installation
+## Standalone Installation 
 
-Clone the github repsoitory and start the install.sh. If necessary change the ports and volume mounts in `docker-compose.yml`. 
+Clone the github repository. If necessary change the ports in the environment file `.env` and the volume mounts in `docker-compose.yml`.
 
-`sudo git clone https://github.com/bibbox/app-varapp`
+```
+git clone https://github.com/bibbox/app-moodle
+cd app-moodle
+docker-compose up -d
+```
 
-`sudo chmod +x install.sh`
-
-`sudo ./install.sh`
-
-Default **login** `user`/`bitnami`
-
-You can access varapp via your webbrowser at [http://localhost:80](http://localhost:8080).
-Finish your varapp setup by following these [instructions](INSTALL-APP.md).
+The main app can be opened and set up at
+```
+http://localhost:80
+```
 
 ## Install within BIBBOX
 
-Within BIBBOX you can use the [BIBBOX](https://bibbox.readthedocs.io/en/latest/) to install a lot of software tools. After the installation is finished you can start your application in the dashboard.
+Visit the BIBBOX page and find the App by its name in the Store. Click on the symbol and select Install. Then fill the parameters below and name your app click install again.
 
-Username and password for the **login** is set duringthe installation.
-
-Finish your varapp setup by following these [instructions](INSTALL-APP.md).
-
-
-## Docker Images Used
+## Docker Images used
+  - [bitnami/mariadb](https://hub.docker.com/r/bitnami/mariadb) 
+  - [bitnami/moodle](https://hub.docker.com/r/bitnami/moodle) 
 
 
- * [bitnami/moodle](https://hub.docker.com/r/bitnami/moodle), Verified Publisher
- * [bitnami/mariadb](https://hub.docker.com/r/bitnami/mariadb), Verified Publisher
  
+## Install Environment Variables
+  - USER = Username for admin moodle user
+  - PASSWORD = Password for the admin moodle user
+  - DB_USER_PASSWORD = User Password for DB User bn_moodle
+  - DB_ADMIN_PASSWORD = Admin Password, please change for production
 
+  
+The default values for the standalone installation are:
+  - USER = user
+  - PASSWORD = bitnami
+  - DB_USER_PASSWORD = bibbox
+  - DB_ADMIN_PASSWORD = bibbox
+
+  
 ## Mounted Volumes
-
-- ./data/mariadb_data
-- ./data/moodle_data
-- ./data/moodledata_data
-
+### bitnami/mariadb Conatiner
+  - *./data/mariadb_data/:/bitnami/mariadb/*
+### bitnami/moodle Conatiner
+  - *./data/moodle_data:/bitnami/moodle*
+  - *./data/moodledata_data:/bitnami/moodledata*
