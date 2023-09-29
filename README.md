@@ -45,9 +45,9 @@ The default values for the standalone installation are:
 
   
 ## Mounted Volumes
-### bitnami/mariadb Conatiner
+### bitnami/mariadb Container
   - *./data/mariadb_data/:/bitnami/mariadb/*
-### bitnami/moodle Conatiner
+### bitnami/moodle Container
   - *./data/moodle_data:/bitnami/moodle*
   - *./data/moodledata_data:/bitnami/moodledata*
 
