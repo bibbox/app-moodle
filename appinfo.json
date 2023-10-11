@@ -7,5 +7,6 @@
 	"catalogue_url": "",
 	"application_url": "https://moodle.org/",
 	"tags": ["Learning", "Teaching","LMS"],
-	"application_documentation_url": "https://docs.moodle.org/402/en/Main_page"
+	"application_documentation_url": "https://docs.moodle.org/402/en/Main_page",
+	"instance_information": "work in progress"
 }
