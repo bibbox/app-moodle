@@ -7,5 +7,6 @@
 	"catalogue_url": "",
 	"application_url": "https://moodle.org/",
 	"tags": ["Learning", "Teaching","LMS"],
-	"application_documentation_url": "https://github.com/bitnami/bitnami-docker-moodle"
+	"application_documentation_url": "https://github.com/bitnami/bitnami-docker-moodle",
+	"instance_information": "<p>  Moodle provides a place to get support, ask and answer questions and to contribute to a open source learning platform.  </p>"
 }
