@@ -7,6 +7,8 @@
 	"catalogue_url": "",
 	"application_url": "https://moodle.org/",
 	"tags": ["Learning", "Teaching","LMS"],
+
 	"application_documentation_url": "https://docs.moodle.org/402/en/Main_page",
+
 	"instance_information": "<p>  Moodle provides a place to get support, ask and answer questions and to contribute to a open source learning platform.  </p>"
 }
